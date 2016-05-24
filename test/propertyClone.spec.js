@@ -1,4 +1,4 @@
-import { propClone } from "../src/propClone";
+import { propertyClone } from "../src/propertyClone";
 
 chai.config.includeStack = true;
 
@@ -7,7 +7,7 @@ let expect = chai.expect;
 describe("Property clone", function () {
 
 	let obj = {prop1: 1, prop2: {subprop: 1}, prop3: {subprop: 1}};
-	let clone = propClone(obj, ["prop2"]);
+	let clone = propertyClone(obj, ["prop2"]);
 
 	it("Clone with property prop 2: clone.prop2.subprop = 3", function () {
 		clone.prop2.subprop = 3;

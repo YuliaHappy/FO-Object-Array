@@ -49,6 +49,6 @@
     "watchify": "^3.7.0"
   },
   "browser": {
-    "memoize": "./src/propClone.js, ./src/datingService.js"
+    "memoize": "./src/propertyClone.js, ./src/datingService.js"
   }
 }
